@@ -1,0 +1,26 @@
+.product-list {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+}
